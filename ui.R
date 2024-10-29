@@ -65,7 +65,7 @@ body <- dashboardBody(
             tabsetPanel(
               type = "tabs",
               tabPanel("Total", plotOutput("total")),
-              tabPanel("Regression", plotOutput("regression")),
+              tabPanel("Model", plotOutput("regression")),
               tabPanel("Error", plotOutput("error")),
               tabPanel("Variance Partition", plotOutput(("variance")))
             )

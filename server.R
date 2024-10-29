@@ -35,7 +35,7 @@ server <- function(input, output) {
     SSA <- SST - SSE
 
     SSQ <- data.frame(
-      SS = c("Total", "Regression", "Error"),
+      SS = c("Total", "Model", "Error"),
       value = as.numeric(c(SST, SSA, SSE) / SST) * 100
     )
     SSQ$SS <- factor(SSQ$SS, as.character(SSQ$SS))
@@ -62,7 +62,7 @@ server <- function(input, output) {
         axis.text = element_text(size = 18),
         panel.background = element_rect(fill = "white", colour = "black")
       ) +
-      ggtitle("SS total")
+      ggtitle("SS Total")
   })
 
   ### First output "graphs"
@@ -82,7 +82,7 @@ server <- function(input, output) {
         axis.text = element_text(size = 18),
         panel.background = element_rect(fill = "white", colour = "black")
       ) +
-      ggtitle("SS regression")
+      ggtitle("SS Model")
   })
 
   ### First output "graphs"
@@ -103,7 +103,7 @@ server <- function(input, output) {
         axis.text = element_text(size = 18),
         panel.background = element_rect(fill = "white", colour = "black")
       ) +
-      ggtitle("SS error")
+      ggtitle("SS Error")
   })
 
   output$variance <- renderPlot({

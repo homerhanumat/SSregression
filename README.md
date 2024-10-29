@@ -1,11 +1,6 @@
 ## About `SSregression`
 
-[![GitHub version](https://badge.fury.io/gh/paternogbc%2FSSregression.svg)](http://badge.fury.io/gh/paternogbc%2FSSregression)
-
-
-This interactive application allows you to explore how Sums of Squares are calculated in simple linear regressions. Change one of the parameters to see what happens.
-
-Check this application online: [SSregression](https://paternogbc.shinyapps.io/SS_regression)
+This app is a fork of [https://github.com/paternogbc/SSregression](https://github.com/paternogbc/SSregression).
 
 ## Run this application on R Studio
 
@@ -21,27 +16,30 @@ install.packages(ggExtra)
 install.packages(DT)
 ```
 
-To run this application localy, simple paste the following code on `R` console: 
+To run this application locally, simply paste the following code on `R` console: 
 ```{r} 
- shiny::runGitHub("SSregression", "paternogbc")
+ shiny::runGitHub("homerhanumat/SSregression")
 ```
 
 ![](http://i.imgur.com/d6i4LGy.png)
 
 
 ## Want to help?
-Fork this repo and create a pull request. Please, report bugs [here](https://github.com/paternogbc/SSregression/issues).
+Fork this repo and create a pull request. Please, report bugs [here](https://github.com/homerhanumat/SSregression/issues).
 
 
 ## License
 This software is Open Source and is under the public license [GPL-3.0](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
-![logo](https://raw.githubusercontent.com/paternogbc/SSregression/master/www/logo.png) 
 
-_The OSI logo trademark is the trademark of [Open Source Initiative](http://opensource.org/)_
 
-## Author
+## Original Author
+
 Gustavo Paterno | paternogc@gmail.com
+
+## Forked and Modifed By
+
+Homer White
 
 ## Credit
 

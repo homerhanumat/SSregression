@@ -18,6 +18,7 @@ install.packages(shinydashboard)
 install.packages(grid)
 install.packages(markdown)
 install.packages(ggExtra)
+install.packages(DT)
 ```
 
 To run this application localy, simple paste the following code on `R` console: 

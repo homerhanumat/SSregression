@@ -118,7 +118,7 @@ server <- function(input, output) {
         panel.background = element_rect(fill = "white", colour = "black")
       ) +
       ylab("% of variance") +
-      xlab("Sums of Squares")
+      xlab(paste0("R^2 = ", round(SSdata()$value[3] / 100, 3)))
   })
 
 
